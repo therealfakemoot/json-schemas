@@ -12,6 +12,7 @@ steps:
     key:
       from_secret: BLOG_DEPLOY_KEY
     user: blog
+    port: 22
     delete: true
     recursive: true
     hosts: ["schemas.ndumas.com"]
