@@ -17,4 +17,4 @@ steps:
     hosts: ["schemas.ndumas.com"]
     source: /drone/src/
     target: /var/www/schemas.ndumas.com/
-    include: ["*.schema.json"]
+    include: ["*"]
