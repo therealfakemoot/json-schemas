@@ -9,10 +9,22 @@
       "description":"base schema for notes",
       "$ref":"https://schemas.ndumas.com/note.schema.json"
     },
+    "draft": {
+      "description": "publishing status",
+      "type":"boolean"
+    },
+    "showFullContent": {
+      "description": "when summarizing content, use description instead of full text",
+      "type":"boolean"
+    },
     "date": {
       "description": "publishing date",
       "type":"string",
       "format":"date"
+    },
+    "author": {
+      "description": "author name",
+      "type":"string"
     },
     "series": {
       "description": "an array of names given to groups of related posts",
@@ -23,5 +35,5 @@
       }
     }
   },
-  "required": ["title","aliases", "date", "series"]
+  "required": ["title","aliases", "date", "series", "draft", "showFullContent", "author"]
 }
