@@ -1,13 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ndumas.com/schemas/post.json",
+  "$id": "https://schemas.ndumas.com/post.schema.json",
   "title":"post",
   "description":"Hugo blog posts",
   "type":"object",
   "properties": {
     "note": {
       "description":"base schema for notes",
-      "$ref":"https://ndumas.com/schemas/note.json"
+      "$ref":"https://schemas.ndumas.com/note.schema.json"
     },
     "date": {
       "description": "publishing date",
@@ -23,5 +23,5 @@
       }
     }
   },
-  "required": ["title","aliases"]
+  "required": ["title","aliases", "date", "series"]
 }
