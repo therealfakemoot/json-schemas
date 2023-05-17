@@ -1,0 +1,20 @@
+kind: pipeline
+name: publish-schemas
+
+clone:
+  depth: 1
+
+
+steps:
+- name: publish
+  image: drillster/drone-rsync
+  settings:
+    key:
+      from_secret: BLOG_DEPLOY_KEY
+    user: blog
+    delete: true
+    recursive: true
+    hosts: ["schemas.ndumas.com"]
+    source: /drone/src/
+    target: /var/www/schemas.ndumas.com/
+    include: ["*.schema.json"]
