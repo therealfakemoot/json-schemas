@@ -35,5 +35,5 @@
       }
     }
   },
-  "required": ["title","aliases", "date", "series", "draft", "showFullContent", "author"]
+  "required": ["date", "series", "draft", "showFullContent", "author"]
 }
