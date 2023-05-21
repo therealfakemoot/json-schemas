@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schemas.ndumas.com/note.schema.json",
+  "$id": "https://schemas.ndumas.com/obsidian/note.schema.json",
   "title":"note",
   "description":"properties all notes must have",
   "type":"object",
