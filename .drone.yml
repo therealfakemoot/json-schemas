@@ -19,4 +19,4 @@ steps:
     source: /drone/src/
     target: /var/www/schemas.ndumas.com/
     include: ["*"]
-    exclude: [".git"]
+    exclude: [".git", ".drone.yml"]
