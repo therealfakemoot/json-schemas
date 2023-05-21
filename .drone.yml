@@ -18,4 +18,5 @@ steps:
     hosts: ["schemas.ndumas.com"]
     source: /drone/src/
     target: /var/www/schemas.ndumas.com/
-    exclude: ["*.git*", "*.drone.yml*"]
+    include:
+      - "**.schema.json"
